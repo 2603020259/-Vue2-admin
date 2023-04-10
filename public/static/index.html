@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星乐猫咖公司总部大屏数据可视化</title>
+    <link rel="stylesheet" type="text/css" href="./fonts/icomoon.css">
+    <script src="./js/echarts.min.js"></script>   
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.6.0.min的副本.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <!--大盒子容器-->
+    <div class="content-fluid box">
+        <div class="row" style="margin-left:10px ;">
+            <!--左侧-->
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 lefts">
+                <!--状态栏-->
+                <div class="left">
+                    <div class="panel">
+                        <div class="inner">
+                            <ul class="zong">
+                                <li class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <h4>2190</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #006cff;"></i>
+                                        设备总数
+                                    </span>
+                                </li>
+                                <li class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <h4>190</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #6acca3;"></i>
+                                        季度新增
+                                    </span>
+                                </li>
+                                <li class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <h4>3001</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #6acca3;"></i>
+                                        运营设备
+                                    </span>
+                                </li>
+                                <li class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <h4>108</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #ed3f35;"></i>
+                                        异常设备
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--监控区栏-->
+                <div class="left1">
+                    <div class="panel">
+                        <div class="inner">
+                            <div class="monitor">
+                                <div class="tabs">
+                                    <a href="javascript:;" class="tab1" style="color: #006cff;">故障设备监控</a>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="tab2">异常设备监控</a>
+                                </div>
+                                <div class="conite1">
+                                    <div class="head">
+                                        <span class="sp1">异常时间</span>
+                                        <span class="sp2">设备地址</span>
+                                        <span class="sp3">异常代码</span>
+                                    </div>
+                                    <div class="xin">
+                                        <ul>
+                                            <li>
+                                                <span class="s1">20190701</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000001</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190702</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000002</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190703</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000003</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190704</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000004</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190705</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000005</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190706</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000006</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190707</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000007</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190708</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000008</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190709</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000009</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190710</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000010</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="conite2">
+                                    <div class="head">
+                                        <span class="sp1">故障时间</span>
+                                        <span class="sp2">设备地址</span>
+                                        <span class="sp3">异常代码</span>
+                                    </div>
+                                    <div class="xin">
+                                        <ul>
+                                            <li>
+                                                <span class="s1">20190701</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000001</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190702</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000002</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190703</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000003</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190704</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000004</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190705</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000005</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190706</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000006</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190707</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000007</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190708</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000008</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190709</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000009</span>
+                                            </li>
+                                            <li>
+                                                <span class="s1">20190710</span>
+                                                <span class="s2">江苏省南京市玄武区金陵路...</span>
+                                                <span class="s3">1000010</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--饼图栏-->
+                <div class=" left2">
+                    <div class="panel">
+                        <div class="inner">
+                            <div class="title">点位分布统计图</div>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 pr"></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 prs">
+                                <h4 style="margin-top:25px;">320,11</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #ed3f35;"></i>
+                                    点位总数
+                                </span>
+                                <h4>418</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #eacf19;"></i>
+                                    点位总数
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间-->
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mains">
+                <div class="row">
+                    <!--上部文字-->
+                    <span class="tong">
+                        <i class="icon-cube"></i>
+                        设备数据统计
+                    </span>
+                    <!--地图-->
+                    <div class="map"></div>
+                    <!--统计表格-->
+                    <div class="tj">
+                        <div class="panel">
+                            <div class="inner">
+                                <span>全国用户总量统计</span>
+                                <!--统计表格-->
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 biao"></div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ti">
+                                    <h4 style="margin-top:25px;">320,11</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #ed3f35;"></i>
+                                        点位总数
+                                    </span>
+                                    <h4>418</h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #eacf19;"></i>
+                                        点位总数
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧-->
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 rights">
+                <!--时间栏-->
+                <div class="shijian">
+                    <div class="panel">
+                        <div class="inner">
+                            <div class="">365天<span>|</span>90天<span>|</span>30天<span></span>
+                                <h4 style="color: #fff; font-size: 16px; font-weight: 400;">24小时</h4>
+                            </div>
+                            <h5 style="color: #fff; margin: 10px; font-size: 18px;">987
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;834</h5>
+                            <span style="color: #006cff;">
+                                <i class="icon-dot" style="color:#ed3f35"></i>
+                                订单数
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: #006cff;">
+                                <i class="icon-dot" style="color:#eacf19"></i>
+                                销售额(万元)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--时间表-->
+                <div class="xian">
+                    <div class="panel">
+                        <div class="inner">
+                            <div class="caption">
+                                <h3>销售额统计</h3>
+
+                                <div class="a">
+                                    <span style="color:#6acca3 ; margin-right: 15px;">|</span>
+                                    <a href="javascript:;" class="active" data-type="year">年</a>
+                                    <a href="javascript:;" data-type="quarter">季</a>
+                                    <a href="javascript:;" data-type="month">月</a>
+                                    <a href="javascript:;" data-type="week">周</a>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="label">单位:万</div>
+                                <div class="line">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--雷达和里程表-->
+                <div class="content-fluid">
+                    <div class="row">
+                        <!--雷达-->
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 leida">
+                            <div class="panel">
+                                <div class="inner">
+                                    <div style="color: #fff;">渠道分布</div>
+                                    <div class="lii"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--里程图-->
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 lucheng">
+                            <div class="panel">
+                                <div class="inner">
+                                    <div style="color: #fff;">一季度销售进度</div>
+                                    <h5 style="color: #fff;">75%</h5>
+                                    <div class="bottom">
+                                        <span>
+                                            <i class="icon-dot" style="color: #ed3f35;"></i>
+                                            销售额(万元)
+                                        </span>
+                                        <span>
+                                            <i class="icon-dot" style="color: #eacf19;"></i>
+                                            同比增长
+                                        </span>
+                                    </div>
+                                    <div class="bott">
+                                        <span>1,321&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150%</span>
+                                    </div>
+                                    <div class="lc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quan">
+                    <div class="panel">
+                        <div class="inner">
+                            <div class="content-fluid">
+                                <div class="row">
+                                    <!--左边冠军栏-->
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 leftt">
+                                        <h5 style="color: #fff; font-size: 16px; margin-top: 10px;">全国热榜</h5>
+                                        <ul>
+                                            <li class="icon-cup1" style="color: #d93f36;">
+                                                <i>斯芬克斯</i>
+                                            </li>
+                                            <li class="icon-cup2" style="color: #68d8fe;">
+                                                <i> 波斯猫</i>
+                                            </li>
+                                            <li class="icon-cup2" style="color: #4c9bfd;">
+                                                <i> 布偶猫</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--右边信息栏-->
+                                    <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 rightt">
+                                        <div class="hs">
+                                            <h5 style="color: #fff; font-size: 16px; margin-top: 10px;">各省热销</h5>
+                                            <i style="color: #006cff;">//&nbsp;&nbsp;近30日&nbsp;&nbsp;//</i>
+                                        </div>
+                                        <div>
+                                            <ul class="sup">
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;" class="actives">
+                                                    <h5 style="font-size: 8px; color: #006cff;"> 北京</h5>
+                                                    <span style="font-size: 8px; color: #006cff;">
+                                                        25.179
+                                                        <i class="icon-up" style="font-size: 8px; color: red; height: 30px; line-height: 30px; text-align: center;"></i>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #006cff;">河北</h5>
+                                                    <span style="font-size: 8px; color: #006cff;">
+                                                        25.179
+                                                        <i class="icon-down" style="font-size: 8px; color: #6acca3; height: 30px; line-height: 30px; text-align: center;"></i>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #006cff;">上海</h5>
+                                                    <span style="font-size: 8px; color: #006cff;">
+                                                        25.179
+                                                        <i class="icon-up" style="font-size: 8px; color:red; height: 30px; line-height: 30px; text-align: center;"></i>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #006cff;">江苏</h5>
+                                                    <span style="font-size: 8px; color: #006cff;">
+                                                        25.179
+                                                        <i class="icon-down" style="font-size: 8px; color:#6acca3;  height: 30px; line-height: 30px; text-align: center;"></i>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #006cff;">山东</h5>
+                                                    <span style="font-size: 8px; color: #006cff;">
+                                                        25.179
+                                                        <i class="icon-up" style="font-size: 8px; color: red; height: 30px; line-height: 30px; text-align: center;"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub">
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #68D8FE;">银渐层</h5>
+                                                    <span style="font-size: 8px; color: #68D8FE;">
+                                                        <m>25.179</m>
+                                                    <s><i class="icon-up" style="font-size: 8px; color: red; height: 30px; line-height: 30px; text-align: center;"></i></s> 
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #68D8FE;">波斯猫</h5>
+                                                    <span style="font-size: 8px; color: #68D8FE;">
+                                                        <m>25.179</m>
+                                                        <s><i class="icon-up" style="font-size: 8px; color: red; height: 30px; line-height: 30px; text-align: center;"></i></s>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #68D8FE;">埃及猫</h5>
+                                                    <span style="font-size: 8px; color: #68D8FE;">
+                                                        <m>25.179</m>
+                                                        <s><i class="icon-down" style="font-size: 8px; color:#6acca3; height: 30px; line-height: 30px; text-align: center;"></i></s>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #68D8FE;">金渐层</h5>
+                                                    <span style="font-size: 8px; color: #68D8FE;">
+                                                        <m>25.179</m>
+                                                        <s><i class="icon-down" style="font-size: 8px; color:#6acca3;  height: 30px; line-height: 30px; text-align: center;"></i></s>
+                                                    </span>
+                                                </li>
+                                                <li style="height: 30px; line-height: 30px; text-align: center; margin: 0px;">
+                                                    <h5 style="font-size: 8px; color: #68D8FE;">布偶猫</h5>
+                                                    <span style="font-size: 8px; color: #68D8FE;">
+                                                        <m>25.179</m>
+                                                        <s><i class="icon-up" style="font-size: 8px; color: red; height: 30px; line-height: 30px; text-align: center;"></i></s>
+                                                    </span>
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/china.js"></script>
+<script src="./js/myMap.js"></script>
+
+</html>
