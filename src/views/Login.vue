@@ -69,6 +69,7 @@ export default {
             this.logins=true;
             this.$refs.form.validate((valid) => {
                 if (valid) {
+                this.logins=true;
                     getMenu(this.form).then(({ data }) => {
                         console.log(data);
                         if (data.code === 20000) {
@@ -93,6 +94,9 @@ export default {
                                 type: 'error',
                                 center: true,
                             });
+                            this.logins=false;
+                            this.form.password='';
+                            this.form.username='';
                             }, 3000);
                         }
 
