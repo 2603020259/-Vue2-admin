@@ -24,7 +24,7 @@ export default {
         // 先判断用户是否存在
         // 判断账号和密码是否对应
         //admin / jiangxinle 超级管理员
-        if (username === 'admin' || username === 'jiangxinle' && password === '123456') {
+        if (username === 'admin' && password === '123456') {
             return {
                 code: 20000,
                 data: {
